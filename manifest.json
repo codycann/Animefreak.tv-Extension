@@ -6,7 +6,13 @@
   "content_scripts": [
     {
       "matches": ["*://www.animefreak.tv/watch/*"], 
-      "css": ["extension.css"],
+      "css": ["extension2.css"],
+	  "js": ["script.js"]
+    }
+  ],
+  "background": [
+    {
+      "matches": ["*://www.animefreak.tv/watch/*"], 
 	  "js": ["script.js"]
     }
   ],
