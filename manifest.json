@@ -1,23 +1,23 @@
 {
-  "name": "Test",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "Test",
-  "content_scripts": [
-    {
-      "matches": ["*://www.animefreak.tv/watch/*"], 
-      "css": ["extension2.css"],
-	  "js": ["script.js"]
-    }
-  ],
-  "background": [
-    {
-      "matches": ["*://www.animefreak.tv/watch/*"], 
-	  "js": ["script.js"]
-    }
-  ],
-  "icons": { "128": "128.png" },
-  "permissions": [
-    "http://*/*", "https://*/*"
-  ]
+	"name": "animefreak.TV Tracker",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "Episode Tracker between animefreak.tv and myanimelist.net",
+	"content_scripts": [
+		{
+			"matches": ["*://www.animefreak.tv/watch/*"], 
+			"css": ["extension2.css"],
+			"js": ["script.js"]
+		}
+	],
+	"background": [
+		{
+			"scripts": ["background.js"]
+		}
+	],
+	"icons": { "128": "128.png" },
+	"permissions": [
+		"tabs",
+		"http://*/*", "https://*/*"
+	]
 }
